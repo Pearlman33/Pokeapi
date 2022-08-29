@@ -26,8 +26,8 @@ public class Controller {
 	@RequestMapping(value="/Group/{id}", method = RequestMethod.GET)
 	@ResponseBody
 	public String getGroup(@RequestParam(name="GroupName")String group,@PathVariable(name="id")int id) {
-		poke.getGroup(group, id);
-		return null;
+		Json = poke.getGroup(group, id);
+		return Json;
 		
 	}
 
